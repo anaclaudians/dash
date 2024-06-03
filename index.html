@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="phone">
+            <div> <img src="/img/logo.jpg" width="10%"></div>
+            <div class="screen">
+                <div class="widget temperature">
+                    <h2>Temperature</h2>
+                    <div class="value">31°C</div>
+                    <div class="min-max">
+                        <span>Min: 20°C</span>
+                        <span>Max: 28°C</span>
+                    </div>
+                </div>
+                <div class="widget humidity">
+                    <h2>Humidity</h2>
+                    <div class="value">27%</div>
+                </div>
+                <div class="widget chart temperature-chart">
+                    <h2>Temperature Over Time</h2>
+                    <canvas id="tempChart"></canvas>
+                </div>
+                <div class="widget chart humidity-chart">
+                    <h2>Humidity Over Time</h2>
+                    <canvas id="humidityChart"></canvas>
+                </div>
+                <div class="widget air-quality">
+                    <h2>Air Quality</h2>
+                    <div class="value">Good</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
